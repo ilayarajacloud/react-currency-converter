@@ -227,18 +227,10 @@ const App = () => {
           <label htmlFor='fromCurrency'>From Currency</label>
           <select id='fromCurrency' value={fromCurrency} onChange={handleFromAmout}>
             {
-              Object.keys(RATES).map((currency) => <option key={currency} value={currency}>{currency}</option>)
+              Object.keys(RATES).map((item)=> <option key={item} value={item}>{item}</option>)
             }
-            {/* <option value="USD">USD - Dollar</option>
-            <option value="EUR">EUR - Euro</option>
-            <option value="GBA">GBP - British Pound Sterling</option>
-            <option value="JPY">JPY - Japaneese Yen</option>
-            <option value="AUD">AUD - Australion Dollar</option>
-            <option value="AUD">CAD Cannedian Dollar</option>
-            <option value="CNY">CNY - Chinese Yuvan</option>
-            <option value="INR">INR - Indian Rupee</option>
-            <option value="BRL">Brazilian Real</option>
-            <option value="ZAR">ZAR South African Rand</option> */}
+          
+            {/* <option value="ZAR">ZAR South African Rand</option>  */}
           </select>
         </div>
         <div className='input-container'>
@@ -247,16 +239,7 @@ const App = () => {
             {
               Object.keys(RATES).map((currency) => <option key={currency} value={currency}>{currency}</option>)
             }
-            {/* <option value="USD">USD - Dollar</option>
-            <option value="ERU">EUR - Euro</option>
-            <option value="GBA">GBP - British Pound Sterling</option>
-            <option value="JPY">JPY - Japaneese Yen</option>
-            <option value="AUD">AUD - Australion Dollar</option>
-            <option value="AUD">CAD Cannedian Dollar</option>
-            <option value="CNY">CNY - Chinese Yuvan</option>
-            <option value="INR">INR - Indian Rupee</option>
-            <option value="BRL">Brazilian Real</option>
-            <option value="ZAR">ZAR South African Rand</option> */}
+          
           </select>
         </div>
         <div className='result'>
