@@ -1,38 +1,78 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2c3a47;
+}
+
+.corency-convertor {
+  width: 500px;
+  background-color: aliceblue;
+  border-radius: 7px;
+  padding: 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-weight: 600;
+  padding: 10px 10px;
+  margin: 5px;
+  text-transform: uppercase;
+  border-bottom: 2px dashed #3498db;
+}
+.box{
+  width: 100%;
+  height: 160px;
+  background-image: url(../public/money.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.input-container{
+  margin-bottom: 15px;
+}
+label{
+  display: block;
+  margin-bottom: 5px;
+  color: #888;
+  font-weight: 500;
+}
+select,
+input{
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  font-size: 18px;
+  outline: none;
+}
+input:focus,
+select:focus{
+  border-color: #3498db;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.result{
+  margin: 10px;
+  padding: 10px;
+  border: 2px dotted #3498db;
+  border-radius: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result p{
+  margin: 6px;
+  color: #3498db;
+  font-weight: bold;
+  text-align: center;
 }
